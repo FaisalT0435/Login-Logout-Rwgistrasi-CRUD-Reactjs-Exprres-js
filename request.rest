@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJTdXJ5YSBUcmkiLCJlbWFpbCI6IlN1cnlhQGdtYWlsLmNvbSIsImlhdCI6MTY3MzgwMjI2MiwiZXhwIjoxNjczODAyMjgyfQ.ZRCFI-DJicyqwVskWqKqAQUwM2bTqeFpI9W8aIE8U6Q
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Surya Tri",
+    "email" :"Surya@gmail.com",
+    "password" : "12345867",
+    "password_confirmation" : "12345867"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    
+    "email" :"Surya@gmail.com",
+    "password" : "12345867"
+    
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
